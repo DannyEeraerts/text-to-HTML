@@ -1,0 +1,137 @@
+:root{
+    --color-red: #fa2742;
+    --color-black: #373833;
+    --color-grey: #ebeae3;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color:var(--color-grey);
+    color:var(--color-black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    margin: 5rem;
+}
+h1{
+    color:var(--color-red);
+    font-size: 4rem;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      margin:2rem;
+      font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .small{
+        margin-top: 0 !important;
+    }
+    nav{
+        flex-direction: column !important;
+        align-content: center;
+        align-items: stretch !important;
+
+    }
+  }
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.small{
+    font-size: 0.9rem;
+    margin-top: -2.5rem;
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.border, .color-selector{
+    border: solid 1px ;
+    padding: 1rem 2rem;
+}
+.color-selector{
+    margin-top: 1rem;
+}
+.selector-box{
+    width: 20rem;
+    margin: 0 auto;
+}
+select{
+    font-size: 1.25rem;
+    padding: 1rem;
+    width: 20rem;
+    display: block;
+    margin: 1 auto;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    background-color: var(--color-black);
+    color: #ebeae3;
+    padding: 1rem 1.25rem;  
+    text-align: center;
+    border-left: solid 1.5px white;
+    border-top: solid 1.5px white;
+    border-bottom: solid 1.5px var(--color-black);
+    border-right: solid 1.5px var(--color-black);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+}
+nav a:hover{
+    border-top: solid 1.5px var(--color-black);
+    border-left: solid 1.5px var(--color-black);
+    border-right: solid 1.5px white;
+    border-bottom: solid 1.5px white;
+    background-color:var(--color-red);
+}
+sup{
+    color: var(--color-red);
+    margin-left: -0.25rem;
+    font-size: 0.75rem;
+}
+h3{
+    font-size: 1.5rem;
+    color:var(--color-red);
+    border-bottom: solid 1px var(--color-black);
+    text-shadow: 1px 1px 1px var(--color-black);
+}
+.subhead::first-letter {
+    font-size: 4rem;
+}
+main{
+    margin-bottom: 2rem;
+}
+img{
+    width: 100%;
+    margin-top: 1rem;
+}
+footer{
+    padding-top: 0.5rem;
+    border-top:solid 1px var(--color-black);
+    text-align: center;
+}
+.color{
+    color:var(--color-red);
+}
+.first{
+    margin-left: -0.4rem;
+}
+.last{
+    margin-left: -0.6rem;
+}
+
+
