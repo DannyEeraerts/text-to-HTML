@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,8 +21,7 @@
         <section>
             <div class ="border">
                 <p class="bold">Accessibility is often viewed as making your site work on screen readers. In reality, web accessibility
-                    is a subset
-                    of User Experience (UX) focused on making your websites usable by the widest range of people possible,
+                    is a subset of User Experience (UX) focused on making your websites usable by the widest range of people possible,
                     including those who have disabilities.</p>
             </div>
         
@@ -35,7 +33,7 @@
                 <a href="#auditory">Auditory</a>
                 <a href="#motor">Motor</a>
                 <a href="#cognitive">Cognitive</a>
-                <a href="#temporary disabilities">Temporary disabilities</a>
+                <a href="#temporary">Temporary disabilities</a>
             </nav>
         </section>
     </header>
@@ -47,14 +45,14 @@
                     <img src="images/color-wheels-color-blindness.png" alt ="color-wheels-color-blindness">
             </section>
             <div class ="color-selector">
-                    <p>If you can't read this website very well due to color-blindness. Change the colors depending on the type of color-blindness.</p>
+                    <p>If you can't read this website properly due to color blindness you can change the colors depending on the type.</p>
                     <div class="selector-box">
-                        <select>
-                            <option value="deuteranopes">deuteranopes</option>
-                            <option value="protanopes">protanopes</option>
-                            <option value="protanomalous">protanomalous</option>
-                            <option value="deuteranomalous">deuteranomalous</option>
-                            <option value="monochromacy">monochromacy</option>
+                        <select id="selection">
+                            <option value="regular" selected>regular vision</option> //no green
+                            <option value="deuteranopes">deuteranopia</option> //no green
+                            <option value="protanopes">protanopia</option> // no red
+                            <option value="tritanopes">tritanopia</option> // no blue
+                            <option value="monochromacy">monochromacy</option> // only grey
                         </select>
                     </div>
                 </div>
@@ -63,7 +61,7 @@
             <ul>
                 <li>Associated conditions</li>
                 <li>Myopia</li>
-                <li>Colour blindness</li>
+                <li>Color blindness</li>
                 <li>Glaucoma</li>
                 <li>Albinism</li>
             </ul>
@@ -109,7 +107,7 @@
         </section>
 
         <section>
-            <h3 class="subhead">T<span class ="last">emporary disabilities</span></h3>
+            <h3 id ="temporary" class="subhead">T<span class ="last">emporary disabilities</span></h3>
             <p>While each of these disabilities is usually permanent, there are often situations in which even fully-abled
                 people are “temporarily disabled”.
                 For instance, an arm or wrist injury may temporarily prevent you from being able to use a mouse.</p>
@@ -127,9 +125,10 @@
     </main>
 
     <footer>
-        &copy; <span class="color">ED</span>web&photostudio 2019
+        &copy; <span class="color">ED</span>web&photostudio <span id="htmlYear">year</span>
     </footer>
 
+    <script src="javascript.js"></script>
 </body>
 
 </html>
